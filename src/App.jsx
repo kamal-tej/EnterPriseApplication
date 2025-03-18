@@ -6,10 +6,21 @@ import Contact from './pages/Contact/Contact';
 import Gallery from './pages/Gallery/Gallery';
 import Products from './pages/Products/Product';
 import Home from './pages/Home/Home';
+import ClipLoader from "react-spinners/ClipLoader";
+import { useEffect, useState } from 'react';
+import logo from '../src/assets/finallogolord.png';
 
 // import './App.css'
 
 function App() {
+
+  const [ loader, setLoader ] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=> {setLoader(false)},1000);
+    console.log(loader);
+  },[])
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -36,7 +47,19 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={router}/>
+    <>
+      {loader ? 
+      (<div className="flex flex-col items-center justify-center h-screen">
+        <div
+          className="w-48 h-48 bg-center bg-no-repeat bg-contain"
+          style={{ backgroundImage: `url(${logo})` }}
+        ></div>
+        <ClipLoader/>
+      </div>
+      )
+      :(<RouterProvider router={router}/>)}
+    </>
+
   )
 }
 

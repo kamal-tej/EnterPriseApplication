@@ -6,24 +6,24 @@ export default function Contact() {
     {
       icon: <FaLocationDot />,
       value:
-        "Arihant Colony Opp : Krishi Upaj Mandi Samiti Mandsaur 458001 M.P",
+        "Bapatla 522101",
       label: "Location",
     },
-    { icon: <FaPhone />, value: "+91 83492 44742", label: "phone" },
+    { icon: <FaPhone />, value: "+91 7013644926", label: "phone" },
     {
       icon: <MdEmail />,
-      value: "shreeganeshent2025@gmail.com",
+      value: "srivenkateswaraenterprises0625@gmail.com",
       label: "email",
     },
   ];
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center w-full min-h-screen bg-cyan-100">
-      <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 bg-black w-full max-w-4xl p-16 rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-row md:space-x-16 space-y-6 bg-black w-full max-w-4xl p-16 rounded-xl shadow-lg">
         <div className="flex flex-col justify-between">
           <div>
             <h1 className="font-bold text-4xl tracking-wide text-white">Contact Us</h1>
-            <p className="pt-2 text-white text-sm">Chandu Enterprises</p>
+            <p className="pt-2 text-white text-sm">Sri Venkateswara Enterprises</p>
           </div>
           <div className="flex flex-col space-y-4">
             {details.map((detail) => {

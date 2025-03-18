@@ -2,7 +2,7 @@ import CustomNavLink from "./CustomNavLink";
 import "../index.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png"
+import logos from "../assets/finallogolord.png"
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,10 +27,10 @@ export default function NavBar() {
     }, []);
 
     return (
-        <section className="py-8">
+        <section className="py-2">
             <div className="container mx-auto px-4">
                 <nav className="flex flex-row items-center justify-between font-bold">
-                    <img className="" src=".." alt="logo" />
+                    <img className="h-20 w-64 bg-white" src={logos} alt="logo" />
                     {/* Menu */}
                     <div className="hidden h-10 font-alata md:flex md:space-x-8">
                         <div className="group">

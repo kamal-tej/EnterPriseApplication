@@ -26,10 +26,11 @@ export default function Content() {
           </h2>
 
           <p class="max-w-md text-center md:text-left">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
+          We take pride in promoting locally grown crops while supporting farmers and
+        strengthening the agricultural economy. Whether you're looking for
+        bulk supply or customized solutions, we are dedicated to delivering
+        excellence with every grain and pulse. Contact us today to learn
+        more about our offerings and how we can cater to your needs.
           </p>
         </div>
       </div>

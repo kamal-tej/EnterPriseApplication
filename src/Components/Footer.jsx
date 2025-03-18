@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
+import logos from "../assets/finallogolord.png"
 
 export default function Footer() {
   const pageComponents = [
@@ -13,11 +14,11 @@ export default function Footer() {
       <div className="container max-w-6xl py-4 mx-auto">
         <div className="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
           <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
-            <div className="h-8">
+            <div className="h-20">
               <img
-                src="images/logo.svg"
+                src={logos}
                 alt="Chandu Enterprises"
-                className="w-44 md:ml-3 text-white"
+                className="w-64 md:ml-3 text-white"
               />
             </div>
             <div className="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">

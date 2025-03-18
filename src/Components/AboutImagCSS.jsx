@@ -9,7 +9,7 @@ export default function ({ImageUrl, ImageName}) {
       />
 
       {/* Text */}
-      <div className="absolute inset-0 flex items-center justify-center bg-opacity-30 text-white shadow text-lg font-bold group-hover:opacity-0 transition-opacity duration-300">
+      <div className="absolute inset-0 flex font-sans items-center justify-center bg-opacity-30 text-white text-lg font-bold group-hover:opacity-0 transition-opacity duration-300">
         {ImageName}
       </div>
     </div>
